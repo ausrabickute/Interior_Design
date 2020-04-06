@@ -1,0 +1,587 @@
+body {
+  background: #ffff;
+  margin: 0;
+  color: rgba(115, 115, 115, 115);
+  font-family: 'Bellota Text', cursive;
+  text-shadow: 0px 0px 2px;
+}
+
+hr {
+  border-top: 1.5px solid #d9d9d9;
+  text-shadow: 0px 0px 2px;
+}
+
+/* Navigation Bar */
+
+li, a {
+  font-weight: 500;
+  font-size: 10px;
+  color: rgba(115, 115, 115, 115);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  height: 40px;
+  padding: 0px 0px 0px 100px;
+}
+
+.nav {
+  display: none;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 8px;
+}
+
+.cta {
+  padding-right: 160px;
+  border: none;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  padding: 0px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/* Main image */
+
+.main-image{
+  background-image: url('main.jpg');
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.free p{
+  text-shadow: 0px 0px 1px;
+  text-align: center;
+  margin: 70px;
+  font-size: 22.5px;
+}
+
+/* Title */
+
+.services {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0rem 10rem;
+}
+
+.title1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
+
+.title1 p{
+  color: #b3b3b3;
+  font-size: 11.5px;
+  grid-gap: 20px;
+  text-align: justify;
+  padding-bottom: 16px;
+  padding-top: 10px;
+}
+
+.title1 img{
+  max-width: 100%;
+  height: auto;
+}
+
+.title1 h6{
+  color: #404040;
+  text-shadow: 0px 0px 2px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button1 {
+  background-color : #fff;
+  border: 2px #404040 solid;
+  box-shadow: 0px 0px 1px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #404040;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* Instagram */
+
+.instagram {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.instagram img{
+  height: auto;
+}
+
+/* Grid */
+
+.grid {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-gap: 45px;
+	grid-template-columns: 47% 22% 22%; 
+	grid-auto-rows: minmax(200px, auto);
+  padding-bottom: 80px;
+}
+
+.one {
+	grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-image: url('img/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.one > img{
+	width: 100%;
+}
+
+.two {
+  background-image: url('img/2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.two > img{
+	width: 100%;
+}
+
+.three {
+  background-image: url('img/4.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.three > img{
+	width: 100%;
+}
+
+.four {
+  background-image: url('img/3.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.four > img{
+	width: 100%;
+}
+
+.five {
+  background-image: url('img/5.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.five > img{
+	width: 100%;
+}
+
+/*Lower logo*/
+
+.center {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.center img{
+  height: 80px;
+}
+
+/* Media max 640 */
+
+@media screen and (max-width: 640px) {
+
+hr{
+  display: none;
+}
+
+.nav_links li, a {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.right, .left {
+  display: none;
+}
+
+/*Hamburger menu*/
+
+#menu{
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar{
+  height: 5px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+#bar1{
+  transform: translateY(-4px);
+}
+
+#bar3{
+  transform: translateY(4px);
+}
+
+.nav li{
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 0;
+  font-size: 11px;
+}
+
+.nav{
+  padding: 0;
+  margin: 0 20px;
+}
+
+.menu-bg, #menu-bar{
+  top: 20px;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg{
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle,#d9d9d9,#d9d9d9);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+#menu-bar{
+  z-index: 2; 
+}
+
+.change-bg{
+  width: 550px;
+  height: 540px;
+  transform: translate(-60%,-30%);
+}
+
+.change .bar{
+  background-color: white;
+}
+
+.change #bar1{
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2{
+  opacity: 0;
+}
+
+.change{
+  display: block;
+}
+
+/*Main image*/
+
+.main-image{
+  height: 50vh;
+}
+
+.free p{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+/*Title*/
+
+.services {
+  text-align: center;
+  padding: 0rem 2rem;
+}
+
+.title1 {
+  display: block;
+}
+
+.title1 p{
+  color: #b3b3b3;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.title1 img{
+  width: 60vh;
+}
+
+.title1 h6{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.button1 {
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  border: 1px #404040 solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px 0px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+/* Instagram */
+
+.instagram {
+  padding: 0px;
+}
+
+.instagram img{
+  height: 50px;
+}
+
+/* Grid */
+
+.grid {
+  grid-template-columns: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Lower logo */
+
+.center {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.center img{
+  height: 60px;
+}
+}
+
+/* Media min 640 max 1024 */
+
+@media screen and (min-width: 640px) and (max-width: 1024px){
+
+.nav_links li, a {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.right, .left {
+  display: none;
+}
+
+/*Hamburger menu*/
+
+#menu{
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar{
+  height: 6px;
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+#bar1{
+  transform: translateY(-5px);
+}
+
+#bar3{
+  transform: translateY(5px);
+}
+
+.nav li{
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 0;
+  font-size: 12.5px;
+}
+
+.nav{
+  padding: 0;
+  margin: 0 20px;
+}
+
+.menu-bg, #menu-bar{
+  top: 20px;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg{
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle,#d9d9d9,#d9d9d9);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+#menu-bar{
+  z-index: 2; 
+}
+
+.change-bg{
+  width: 600px;
+  height: 590px;
+  transform: translate(-60%,-30%);
+}
+
+.change .bar{
+  background-color: white;
+}
+
+.change #bar1{
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3{
+  transform: translateY(-7px) rotate(45deg);
+}
+
+.change #bar2{
+  opacity: 0;
+}
+
+.change{
+  display: block;
+}
+
+/*Main image*/
+
+.main-image{
+  height: 60vh;
+}
+
+.free p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/* Title */
+
+.services {
+  text-align: center;
+  padding: 0rem 10rem;
+}
+
+.title1 {
+  display: block;
+  text-align: center;
+}
+
+.title1 p{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.title1 img{
+  width: 70vh;
+}
+
+.title1 h6{
+ font-size: 18px;
+ margin: 10px;
+ padding-top: 30px;
+}
+
+.button1 {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  border: 1px #404040 solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px 0px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+/* Instagram */
+
+.instagram {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.instagram img{
+  height: 50px;
+}
+
+/* Grid */
+
+.grid {
+  grid-template-columns: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Lower logo */
+
+.center {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.center img{
+  height: 70px;
+}
+}
